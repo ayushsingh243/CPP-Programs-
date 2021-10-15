@@ -1,0 +1,43 @@
+#include<iostream.h>
+Class bb
+{
+    Public:
+    Virtual void ppp()
+    {
+    Cout<<”it is the base class ”<<endl;
+}
+ 
+};
+ 
+Class d1: public bb
+{
+ 
+Public:
+Void ppp()
+{
+ 
+Cout<<”it is the first derived class”<<endl;
+}
+};
+Class d2 : public bb
+{
+Public:
+Void ppp()
+{
+Cout<<”it is the second derived class”<<endl;
+}
+};
+Main()
+{
+bb *p;
+d1 a;
+d2 b;
+p=&a;
+p->ppp();
+p= &b;
+p->ppp();
+ 
+}
+Output
+It is the first derived class
+It is the second derived class
